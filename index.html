@@ -3,42 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My SCST1133 E-Portfolio</title>
+  <title>Lu Shi Le | SCST1133 E-Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>SCST1133 Data Engineering Ecosystem</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Selected Work</a>
-      <a href="#reflection">Reflection</a>
-    </nav>
+    <div class="container header-content">
+      <div class="logo-area">
+        <span>SCST1133 &middot; Data Engineering Ecosystem</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#journey">Learning Journey</a>
+        <a href="#work">Selected Work</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#summary">Summary</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Professional Profile</h2>
-      <p>Write a short professional introduction here.</p>
+  <main class="container">
+    <!-- Section A: Home and Professional Profile -->
+    <section id="about" class="card">
+      <div class="profile-grid">
+        <div class="profile-img-placeholder">
+          <img src="images/profile.jpg" alt="Lu Shi Le Profile Photo">
+        </div>
+        <div class="profile-info">
+          <h1>Lu Shi Le</h1>
+          <p class="headline">Undergraduate Student in Bachelor of Computer Science (Data Engineering)</p>
+          <p class="sub-info">Universiti Teknologi Malaysia (UTM) &middot; Student ID: A26CS0444</p>
+          <p class="bio">
+            Passionate computing student building a strong foundation in data engineering ecosystems, software programming, 
+            and systems thinking. Eager to explore data lifecycles, acquisition workflows, and responsible data management practices.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/lushile-web" target="_blank" class="btn">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="work">
-      <h2>Selected Work</h2>
-      <article>
-        <h3>Design Thinking and Figma</h3>
-        <img src="images/project-screenshot.png"
-             alt="Screenshot of my Figma prototype">
-        <p>Explain the artifact and your contribution.</p>
-      </article>
+    <!-- Section B: Learning Journey -->
+    <section id="journey" class="card">
+      <h2>Learning Journey</h2>
+      <p>My progress and conceptual development throughout SCST1133:</p>
+      <div class="timeline-grid">
+        <div class="journey-item">
+          <h3>1. Foundations</h3>
+          <p>Computing concepts, digital tools, and systems thinking fundamentals.</p>
+        </div>
+        <div class="journey-item">
+          <h3>2. Landscape & Ecosystem</h3>
+          <p>Understanding industry roles, components, and collaborative data environments.</p>
+        </div>
+        <div class="journey-item">
+          <h3>3. Lifecycle & Acquisition</h3>
+          <p>Designing data engineering workflows, data collection methods, and quality standards.</p>
+        </div>
+        <div class="journey-item">
+          <h3>4. Responsibility & Innovation</h3>
+          <p>Governance, ethics, professional responsibility, and emerging data areas.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="reflection">
-      <h2>Course Reflection</h2>
-      <p>Explain what you learned and what you would improve.</p>
+    <!-- Section C: Selected Work and Evidence -->
+    <section id="work" class="card">
+      <h2>Selected Work and Evidence</h2>
+      <div class="artifact-grid">
+        <article class="artifact-card">
+          <h3>Design Thinking & Figma Prototype</h3>
+          <p>Collaborative problem-solving, UI/UX prototyping, and system ideation addressing real user requirements.</p>
+        </article>
+        <article class="artifact-card">
+          <h3>Data Engineering Lifecycle Video</h3>
+          <p>Visualizing raw data ingestion, transformation pipelines, storage layers, and architectural decisions.</p>
+        </article>
+        <article class="artifact-card">
+          <h3>Industry Talk & Visit Reports</h3>
+          <p>Key takeaways, professional observations, and connections to real-world data engineering practices.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section D: Reflection on Artifacts -->
+    <section id="reflection" class="card">
+      <h2>Reflection on Artifacts</h2>
+      
+      <div class="reflection-content" style="margin-bottom: 20px;">
+        <h3>1. Design Thinking & Figma Project Reflection</h3>
+        <ul>
+          <li><strong>What I learned:</strong> How user-centric problem definition directly shapes technical system requirements and user interface workflows.</li>
+          <li><strong>Challenge & Decision:</strong> Balancing feature scope with strict prototyping deadlines during iterative wireframe layout adjustments.</li>
+          <li><strong>CLO Connection:</strong> Aligns with <em>CLO3 (Develop)</em> by building a functional prototype addressing user and system needs.</li>
+          <li><strong>Improvement:</strong> Implement more robust user feedback loops early in the initial wireframing stage.</li>
+        </ul>
+      </div>
+
+      <div class="reflection-content">
+        <h3>2. Data Engineering Lifecycle Video Reflection</h3>
+        <ul>
+          <li><strong>What I learned:</strong> How end-to-end data flows operate from source acquisition to analytical consumption.</li>
+          <li><strong>Challenge & Decision:</strong> Clearly illustrating complex pipeline stages within a concise presentation format.</li>
+          <li><strong>CLO Connection:</strong> Aligns with <em>CLO2 (Construct)</em> by demonstrating understanding of the data engineering lifecycle.</li>
+          <li><strong>Improvement:</strong> Incorporate more detailed architectural diagrams showing data validation checks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section E: Course Learning Summary -->
+    <section id="summary" class="card">
+      <h2>Course Learning Summary</h2>
+      <p>
+        SCST1133 fundamentally transformed my perspective on how data flows from raw ingestion to reliable enterprise assets. 
+        Moving forward, I want to deepen my expertise in system programming, scalable data pipelines, and ethical data governance.
+      </p>
+    </section>
+
+    <!-- Section F: Sources and Acknowledgements -->
+    <section id="sources" class="card">
+      <h2>Sources and Acknowledgements</h2>
+      <p>All coursework materials, templates, and libraries are properly credited. Generative AI tools were utilized in accordance with course guidelines to assist with code structuring and documentation refinement.</p>
     </section>
   </main>
 
-  <footer><p>© 2026 Your Name</p></footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lu Shi Le (A26CS0444) &middot; SCST1133 Data Engineering Ecosystem &middot; UTM</p>
+    </div>
+  </footer>
 </body>
 </html>
